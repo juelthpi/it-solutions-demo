@@ -1,8 +1,8 @@
 .animation-cover {
   position: relative;
-  padding: 4px;
+  padding: 10px;
   border-radius: 15px;
-  background-color: #ffffff08;
+
   overflow: hidden;
 }
 .technology-box-shadow {
@@ -18,35 +18,35 @@
   mix-blend-mode: screen;
   opacity: 0.8;
 }
+
 .glow-2 {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   transform: rotate(45deg);
   offset-path: rect(0% auto 100% auto);
   mix-blend-mode: screen;
   opacity: 0.8;
 }
+
 /*  Left-to-right glow: Blue */
 .glow-2.left-to-right {
-  background: radial-gradient(#764af9, #764af9, transparent);
+  background: linear-gradient(24.86deg, rgba(12, 38, 200, 0) -2.37%, #82B4FF 37.06%, #0C26C8 57.77%, rgba(130, 180, 255, 0) 100%);
   animation: moveRight 7s linear infinite;
 }
 /*  Right-to-left glow: Pink */
 .glow-2.right-to-left {
-  background: radial-gradient(#764af9, #764af9, transparent);
+  background: linear-gradient(24.86deg, rgba(12, 38, 200, 0) -2.37%, #82B4FF 37.06%, #0C26C8 57.77%, rgba(130, 180, 255, 0) 100%);
   animation: moveLeft 7s linear infinite;
 }
 /*  Left-to-right glow: Blue */
 .glow-1.left-to-right {
- 
-
-  background:linear-gradient(24.86deg, rgba(12, 38, 200, 0) -2.37%, #82B4FF 37.06%, #0C26C8 57.77%, rgba(130, 180, 255, 0) 100%);
+  background: linear-gradient(24.86deg, rgba(12, 38, 200, 0) -2.37%, #82B4FF 37.06%, #0C26C8 57.77%, rgba(130, 180, 255, 0) 100%);
   animation: moveRight 7s linear infinite;
 }
 /*  Right-to-left glow: Pink */
 .glow-1.right-to-left {
-  background: radial-gradient(#764af9, #764af9, transparent);
+  background:  linear-gradient(24.86deg, rgba(12, 38, 200, 0) -2.37%, #82B4FF 37.06%, #0C26C8 57.77%, rgba(130, 180, 255, 0) 100%);
   animation: moveLeft 7s linear infinite;
 }
 @keyframes moveRight {

@@ -17,6 +17,31 @@ jQuery(document).ready(function ($) {
     dots: true,
     infinite: true,
   });
+
+  $('.testimonial-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    dots: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    smartSpeed: 800,  
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 1
+      },
+      768: {
+      items: 1
+      },
+      992: {
+        items: 2
+    }
+  }
+});
+
  
   $(document).on("click", function (event) {
     const $div = $("#outside-click");
@@ -35,3 +60,4 @@ jQuery(document).ready(function ($) {
   });
 });
  
+
