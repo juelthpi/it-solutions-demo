@@ -45,20 +45,14 @@
  
  
     <link rel="stylesheet" href="assets/css/box-animation.css" />
- 
   
  
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/preloader.css">
     <style></style>
   </head>
   <body>
-     <div id="preloader">
-      <div id="status">
-        <img src="assets/images/short-cut-icon.webp" alt="logo" />
-      </div>
-    </div>
+     
     <!-- Header Start-->
     <header class="header-area">
       <div class="container">
@@ -130,7 +124,7 @@
     <!-- Header End -->
     <!-- Hero Start -->
     <section
-      class="hero-section position-relative particle-area"   data-particles="200"
+      class="hero-section position-relative"
     >
       <div class="container">
         <div class="row">
@@ -184,7 +178,6 @@
     </section>
      <!-- start discovery area -->
     <section class="discovery-area position-relative pb-100 overflow-hidden">
-      <div class="ellipse ellipse-1"></div>
         <div class="container position-relative z-99">
           <div class="row g-5 align-items-center"> 
             <div class="col-lg-6">
@@ -1189,13 +1182,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     </script>
  
- <script>
-  $(window).on("load", function () {
-  $("#preloader").fadeOut();
-  $("#preloader").delay(500).fadeOut("slow");
-  $("body").delay(500).css({ opacity: 1 });
-});
- </script>
  
     
     

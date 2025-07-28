@@ -51,14 +51,7 @@ h3 {
   letter-spacing: -0.2px;
 }
 
-h4 {
-  font-size: 24px;
-  line-height: 34px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-weight: 600;
-  letter-spacing: -0.2px;
-}
+
 
 h5 {
   font-size: 20px;
@@ -139,7 +132,7 @@ p {
 }
 
 .container {
-  max-width: 1650px;
+  max-width: 1450px;
 }
 
 input {
@@ -390,16 +383,24 @@ button:focus:not(:focus-visible) {
   background-clip: text;
   text-fill-color: transparent;
 }
-
+ 
 .common-heading p {
   letter-spacing: 1px;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 16px;
+  line-height:28px;
   margin-top: 20px;
 }
+.animation-cover{
+  background: linear-gradient(180deg, rgba(12, 38, 200, 0) 0%, rgba(12, 38, 200, 0.13) 41.52%, rgba(12, 38, 200, 0) 100%);
+ 
 
+box-shadow: 0px 0px 40px 0px #0167ff92;
+ 
+
+}
+.circle{}
 .common-heading h1 {
-  font-size: 140px;
+  font-size: 100px;
   line-height: 110%;
   font-weight: 600;
   color: #fff;
@@ -564,32 +565,20 @@ button:focus:not(:focus-visible) {
   overflow-x: hidden;
 }
 
-.hero-section:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/bg/bg-1.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  z-index: -2;
-}
+
 .hero-section{
   position: relative;
 }
-.header-area:before{
-  background: url(../images/shape/1.png);
-  content: "";
-  position: absolute;
-  top: -5%;
-  z-index:-2;
-  right: 0;
-  height:800px;
-  background-size: 100% 100%;
-  width: 500px;
+.header-area:before {
+    background: url(../images/shape/1.png);
+    content: "";
+    position: absolute;
+    top: -10%;
+    z-index: -2;
+    right: 0;
+    height: 940px;
+    background-size: 100% 100%;
+    width: 597px;
 }
 /* .hero-section:before {
   content: "";
@@ -605,9 +594,10 @@ button:focus:not(:focus-visible) {
 
 .hero-section {
   padding-top: 100px;
-  padding-bottom: 50px;
 }
-
+.discovery-area{
+  margin-top: -150px;
+}
 .header-area {
   position: sticky;
   left: 0;
@@ -1308,8 +1298,8 @@ button:focus:not(:focus-visible) {
 
 .hero-content h3 {
   font-weight: 600;
-  font-size: 56px;
-  line-height: 100%;
+  font-size:40px;
+  line-height:50px;
   color: #fff;
   width: 100%;
   max-width: 423px; 
@@ -1317,8 +1307,8 @@ button:focus:not(:focus-visible) {
 
 .hero-content-right p {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 160%;
+  font-size: 16px;
+  line-height:28px;
   color: #FFFFFFCC;
   margin-bottom: 40px;
 }
@@ -1412,14 +1402,16 @@ button:focus:not(:focus-visible) {
     transform: rotate(360deg);
   }
 }
-
+/* 
 .hero-user {
   padding: 92px 0 60px 0;
+} */
+.hero-user{
+  position: relative;
 }
-
 .hero-content {
   position: absolute;
-  bottom: 100px;
+  bottom:280px;
   left: 0;
   width: 100%;
   z-index: 9999;
@@ -1439,9 +1431,7 @@ button:focus:not(:focus-visible) {
 
 }
 
-.hero-section {
-  backdrop-filter: blur(20px)
-}
+ 
 
 .pt-140 {
   padding-top: 140px;
@@ -1462,7 +1452,7 @@ button:focus:not(:focus-visible) {
 }
 
 .text-56 {
-  font-size: 56px !important;
+  font-size:45px !important;
 }
 
 .common-heading h1 span {
@@ -1534,23 +1524,25 @@ button:focus:not(:focus-visible) {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(115, 134, 255, 0.6);
 }
- 
+ .accordion-button img{
+  width:40px
+ }
 h4 { 
   font-weight: 600; 
-  font-size: 34px; 
+  font-size:24px; 
   line-height: 100%;  
   color: #fff;
 }
  
 h3 { 
   font-weight: 600; 
-  font-size: 46px; 
+  font-size:28px; 
   line-height: 100%;  
   color: #fff;
 }
 
 .accordion-icon{
-  margin-right: 30px;
+  margin-right:10px;
 }
 
 .mb-70 {
@@ -1596,11 +1588,13 @@ h3 {
 }
 
 .testimonial-client-img img  {
-  width: 72px !important;
+  width:45px !important;
 }
-
+.contact-icon img{
+  width: 45px;
+}
 .testimonial-single p{
-  font-size: 20px;
+  font-size:18px;
   line-height: 160%;
   color: #FFFFFFCC;
   margin-bottom: 40px;
@@ -1617,7 +1611,7 @@ h3 {
 }
 
 .testi-user-info h4 {
-  font-size: 24px;
+  font-size:20px;
   line-height: 130%;
 } 
 
@@ -1665,22 +1659,64 @@ h3 {
 }
 
 .impact-info h4 {
-  font-size: 32px;
-  line-height: 130%;
-  margin: 30px 0 20px 0;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 25px 0 12px 0;
 }
 
 .hero-user img {
   width: 430px;
 }
-
-.video-hero {
-  width: 100%;
+ .hero-center-area{
+  height: 900px;
+  width: 900px;
+  position: relative;
+  margin-top: -80px;
+ }
+ .hero-section:after{
+  content: "";
   position: absolute;
-  top: 130px;
+  bottom:0px;
+  right: -100px;
+  z-index: -2;
+  height:300px;
+  width:300px;
+   
+  background-size: 100% 100%;
+background: url('../images/hero/circle.png');
+background-repeat: no-repeat;
+ }
+ .left-animation-video{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  left:-10%;
+  z-index: -2;
+ }
+  .right-animation-video{
+     position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  right:-10%;
+  z-index: -2;
+  }
+  .left-animation-video video{
+    width: 100%;
+  }
+ .hero-center-area img{
+  width:330px;
+  height:330px;
+  position: absolute;
+  top:50%;
   left: 0;
-}
-
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  margin-top: -20px;
+ }
+ .hero-center-area video{
+  width: 100%;
+ }
 .z-99 {
   z-index: 99;
 }
@@ -1934,15 +1970,15 @@ h3 {
 
 .contact-info p { 
 	font-weight: 400; 
-	font-size: 24px; 
-	line-height: 100%; 
+	font-size: 20px; 
+	line-height:35px; 
 	color: #fff;
   margin: 0;
 }
 
 .contact-info-ul li {
-  margin-top: 30px;
-  padding-bottom: 30px;
+  margin-top:25px;
+  padding-bottom:25px;
   border-bottom: 1.5px solid #FFFFFF33;
 }
 
@@ -1970,19 +2006,18 @@ h3 {
   justify-content: flex-end;
   gap: 17px;
 }
-
 .footer-social ul li a {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  border: 1px solid #353434;
-  width: 56px;
-  height: 56px;
-  border-radius: 6px;
-  font-size: 36px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.6s;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #353434;
+    width: 46px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
 }
 
 .footer-social ul li a:hover {
@@ -2029,7 +2064,7 @@ h3 {
 }
 .footer-single ul li a { 
   font-weight: 400; 
-  font-size: 18px; 
+  font-size: 16px; 
   line-height: 160%; 
   color: #FFFFFFCC;
   transition: 0.6s;

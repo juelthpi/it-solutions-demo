@@ -31,9 +31,6 @@
         width: 1520px;
     }
 
-    .common-heading h1 {
-        font-size: 90px;
-    }
 }
 
 
@@ -247,7 +244,7 @@
 
     .hero-content h3 {
         max-width: 100%;
-        font-size: 36px;
+        font-size:28px;
     }
 
     .hero-content-right {
