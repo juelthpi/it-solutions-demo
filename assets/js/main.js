@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
   $(".testimonial-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     arrows: false,
     dots: true,
@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
     margin: 30,
     dots: true,
     nav: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 4000,
     smartSpeed: 800,  
     responsive: {
@@ -34,10 +34,12 @@ jQuery(document).ready(function ($) {
         items: 1
       },
       768: {
-      items: 1
+      items: 1,
+       margin:0,
       },
       992: {
         items: 2
+        
     }
   }
 });

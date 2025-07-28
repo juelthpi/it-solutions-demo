@@ -73,10 +73,7 @@
         font-size: 28px;
     }
 
-    .accordion-icon {
-        margin-right: 30px;
-        width: 50px;
-    }
+
 }
 
 @media all and (max-width: 1365px) {
@@ -103,6 +100,10 @@
     .video-hero {
         top: 176px;
     }
+    .hero-center-area{
+        height: 750px;
+        width: 750px;
+    }
 }
 
 @media all and (max-width: 1259px) {
@@ -120,9 +121,26 @@
 
 
 @media all and (max-width: 1200px) {
+     .common-heading h1 {
+        font-size: 54px;
+    }
+    .hero-content{
+        margin-top: 145px;
+    }
+    .hero-center-area img {
+    width: 280px;
+    height: 280px;
+ 
+    
+    margin-top: -12px;
+}
     .process-animation {
         display: none;
     }
+    .hero-center-area {
+    height: 620px;
+    width: 620px;
+}
 .header-right {
 	display: none !important;
 }
@@ -208,9 +226,7 @@
         transform: rotate(90deg) translate(572px, 18px);
     }
 
-    .common-heading h1 {
-        font-size: 54px;
-    }
+   
 
     .text-56 {
         font-size: 42px !important;
@@ -219,9 +235,47 @@
 
 
 @media (max-width: 991px) {
+    .footer-single ul li a {
+    font-size: 14px;
+    }
+    .impact-info h4 {
+    font-size: 22px;
+    line-height: 30px;
+}
+    .ptb-120 {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+    .business-accordion .accordion-button {
+    padding: 12px 12px;
+}
+.testimonial-area{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.testimonial-single{
+    padding: 30px 20px;
+}
+.cta-section {
+
+    padding: 80px 0;
+    margin-top: 30px;
+}
+.accordion-button img {
+    width: 30px;
+}
+.accordion-body img{
+    width: 50px;
+}
+    .header-area:before {
+    opacity: 0.5;
+}
     .hero-user img {
         width: 194px;
     }
+    .discovery-area-1 {
+    margin-top: -220px;
+}
 
     .hero-content {
         flex-direction: column;
@@ -245,6 +299,7 @@
     .hero-content h3 {
         max-width: 100%;
         font-size:28px;
+        line-height: 36px;
     }
 
     .hero-content-right {
@@ -271,13 +326,36 @@
     .create-account-wrapper {
         min-height: auto;
     }
+       h4 {
+        font-size: 18px;
+    }
 
 }
 
 @media (max-width: 767px) {
+    .hero-content h3 {
+        max-width: 100%;
+        font-size:24px;
+        line-height:32px;
+    }
+    .hero-center-area img {
+    width: 156px;
+    height: 156px;
+    margin-top: -83px;
+}
+    .hero-center-area {
+    height: 500px;
+    margin-top: 35px;
+    width: 500px;
+}
     .hero-user img {
         width: 127px;
     }
+    .hero-center-area img {
+    width: 235px;
+    height: 235px;
+ 
+}
     .navbar-brand img {
 	max-width: 203px;
 	width: 100%;
@@ -293,7 +371,7 @@
     }
 
     .common-heading h1 {
-        font-size: 30px;
+        font-size: 38px;
     }
 
     .process-item {
@@ -354,9 +432,7 @@
         padding: 30px 0;
     }
 
-    h4 {
-        font-size: 18px;
-    }
+ 
 
     h3 {
         font-size: 20px;
@@ -387,6 +463,9 @@
 }
 
 @media all and (max-width: 576px) {
+    .common-heading h1 {
+    font-size: 32px;
+    }
     .hero-user img {
         width: 90px;
     }
