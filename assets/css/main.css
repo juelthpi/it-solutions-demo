@@ -398,11 +398,12 @@ box-shadow: 0px 0px 40px 0px #0167ff92;
  
 
 }
-.circle{}
+ 
 .common-heading h1 {
   font-size: 100px;
   line-height: 110%;
   font-weight: 600;
+      text-shadow: 12px 20px 50px rgb(7 25 128);
   color: #fff;
 }
 
@@ -418,6 +419,25 @@ box-shadow: 0px 0px 40px 0px #0167ff92;
   line-height: 110%;
 }
 
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #FF9800;
+  animation: blink 2s steps(1) infinite;
+  vertical-align: bottom;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.impact-section{
+  background: url('../images/bg/1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .common-heading h4 {
   font-size: 22px;
   line-height: 30px;
@@ -595,8 +615,12 @@ box-shadow: 0px 0px 40px 0px #0167ff92;
 .hero-section {
   padding-top: 100px;
 }
-.discovery-area{
+.discovery-area-1{
   margin-top: -150px;
+}
+.ptb-120{
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .header-area {
   position: sticky;
@@ -1434,7 +1458,7 @@ box-shadow: 0px 0px 40px 0px #0167ff92;
  
 
 .pt-140 {
-  padding-top: 140px;
+  padding-top:100px;
 }
 
 .hero-bottom-circle {
@@ -1917,27 +1941,30 @@ background-repeat: no-repeat;
 
 .form-group label { 
   font-weight: 500; 
-  font-size: 18px; 
+  font-size: 16px; 
   line-height: 100%; 
   color: #fff;
   display: block;
   margin-bottom:15px;
 }
 
-.form-group textarea,
-.form-group input {
-  background: #FFFFFF0D;
-  border: 1px solid #FFFFFF33;
-  backdrop-filter: blur(20px);
-  width: 100%;
-  padding: 17px 20px; 
-  font-weight: 400; 
-  font-size: 18px; 
-  line-height: 100%; 
-  color: #fff;
-  border-radius: 10px;
+.form-group textarea, .form-group input {
+    background: #FFFFFF0D;
+    border: 1px solid #FFFFFF33;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    border-radius: 6px;
+}.cta-section{
+  background: url('../images/bg/2.png');
+  background-size: cover;
+  padding: 120px 0;
+  margin-top:100px;
 }
-
 .form-group textarea {
   resize: none;
   height: 145px;

@@ -137,7 +137,7 @@
           <div class="col-md-12 position-relative">
             <div class="common-heading text-center position-relative z-99">
               <h1 class="text-white mt-30">
-                Custom IT Solutions 
+                Custom IT <span class="typed-text"></span><span class="cursor">&nbsp;</span>
               </h1> 
             </div>
             
@@ -183,7 +183,7 @@
        
     </section>
      <!-- start discovery area -->
-    <section class="discovery-area position-relative pb-100 overflow-hidden">
+    <section class="discovery-area  discovery-area-1 position-relative pb-100 overflow-hidden">
       <div class="ellipse ellipse-1"></div>
         <div class="container position-relative z-99">
           <div class="row g-5 align-items-center"> 
@@ -492,7 +492,30 @@
       </div>
     </section>
     <!-- end business area  -->
-
+    <section class="cta-section">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-8">
+            <div class="common-heading text-center">
+              <h1 class="text-white mt-30 text-56">
+               IT Services and Support to Power the <span>Human Side of Business</span>
+              </h1> 
+              <p>Gain a competitive advantage with a people-focused approach to IT services and support.</p>
+              <div class="outside justify-content-center mt-5">
+                <div class="out">
+                  <div class="glow"></div>
+                  <div class="inner">
+                    <div class="d-inline-block btn-outline">
+                      <a href="#" class="primary-btn">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
     <!-- start testimonial area  --> 
     <section class="testimonial-area position-relative pt-140"> 
       <div class="left-shape">
@@ -673,7 +696,7 @@
     <!-- end testimonial area  -->
 
     <!-- impact section Start -->
-    <section class="impact-section  position-relative pt-140 ">
+    <section class="impact-section  position-relative ptb-120 ">
       <div class="container">
         <div class="row justify-content-center"> 
           <div class="col-md-8">
@@ -735,7 +758,7 @@
     <!-- impact section End --> 
 
     <!-- start process area  -->
-    <section class="process-area position-relative pt-140 ">
+    <section class="process-area position-relative  d-none">
         <div class="container">
         <div class="row justify-content-center"> 
           <div class="col-md-8">
@@ -800,7 +823,7 @@
     <!-- end process area  -->
 
     <!-- start discovery area -->
-    <section class="discovery-area position-relative pt-140 pb-100 overflow-hidden">
+    <section class="discovery-area position-relative pb-100 overflow-hidden">
         <div class="container position-relative z-99">
           <div class="row g-5 align-items-center"> 
             <div class="col-lg-6">
@@ -1196,7 +1219,45 @@ document.addEventListener('DOMContentLoaded', () => {
   $("body").delay(500).css({ opacity: 1 });
 });
  </script>
- 
+<script>
+  const textArray = ["Solutions", "Creative Ideas", "Smart Tools"];
+const typingDelay = 200;     // slower typing
+const erasingDelay = 100;    // slower erasing
+const newTextDelay = 1500;   // Delay before new word types
+let textIndex = 0;
+let charIndex = 0;
+
+const typedText = document.querySelector(".typed-text");
+const cursor = document.querySelector(".cursor");
+
+function type() {
+  if (charIndex < textArray[textIndex].length) {
+    typedText.textContent += textArray[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    typedText.textContent = textArray[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    textIndex++;
+    if (textIndex >= textArray.length) textIndex = 0;
+    setTimeout(type, typingDelay + 500);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+</script>
+
     
     
   </body>
