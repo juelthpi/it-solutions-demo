@@ -81,6 +81,11 @@
         width: 1365px;
     }
 }
+@media all and (min-width: 1280px) {
+    .nav-item{
+        padding: 0 10px;
+    }
+}
 
 @media all and (max-width: 1335px) {
     .line-animation-svg {
