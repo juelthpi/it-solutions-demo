@@ -250,6 +250,9 @@
 
 
 @media (max-width: 991px) {
+    .mobile-padding{
+        padding-top: 0 !important;
+    }
     .footer-single ul li a {
     font-size: 14px;
     }
