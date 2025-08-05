@@ -63,7 +63,9 @@
     .crate-account-item-4 {
         width: 100%;
     }
-
+.info-section {
+        padding-bottom: 100px;
+    }
 
     h3 {
         font-size: 32px;
@@ -91,6 +93,7 @@
     .line-animation-svg {
         width: 1315px;
     }
+    
 }
 
 @media all and (max-width: 1335px) {
@@ -225,6 +228,13 @@
 }
 
 
+@media screen and (max-width: 1199px) {
+    .thumbnails-inner-right {
+ 
+    margin-bottom: 150px;
+ 
+}
+}
 @media screen and (max-width: 1023.98px) {
     .line-animation-svg {
         width: 1200px;
@@ -330,14 +340,31 @@
 
     .create-account-wrapper {
         min-height: auto;
+        padding-bottom: 100px;
     }
        h4 {
         font-size: 18px;
     }
+    .thumbnails-inner img,.thumbnails-inner-right img{
+        max-width: 250px;
+    }
+    .page-info {
+    
+    padding-bottom: 90px;
+}
+.principles-section-inner{
+    background-size: cover;
+}
+.info-section {
+    padding-top: 70px;
+}
 
 }
 
 @media (max-width: 767px) {
+    .thumbnails-inner img,.thumbnails-inner-right img{
+        max-width: 200px;
+    }
     .hero-content h3 {
         max-width: 100%;
         font-size:24px;
