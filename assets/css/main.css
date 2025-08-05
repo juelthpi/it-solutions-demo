@@ -2167,18 +2167,19 @@ background-repeat: no-repeat;
 .breadcrumb {
   display: flex;
   align-items: center;
-  gap:8px;
-  color: white;
+  gap:6px;
+  color: #ebe9e9b2;
+  
   font-size: 16px;
   justify-content: center;
 }
 
 
 .breadcrumb a {
-  color: white;
+  color: #ebe9e9b2;
  transition: 0.5s;
 }.breadcrumb a.active{
-  color: #FFFFFFB2;
+  color: white;
 }
 
 .breadcrumb a:hover {
@@ -2224,3 +2225,15 @@ padding: 35px 15px;
 }
 
 /* about page end css */
+
+.service-accordion{
+ background: #040F56;
+border-radius: 20px;
+padding: 70px 20px;
+max-width: 1700px;
+width: 95%;
+margin: 0 auto;
+}
+.mt-100{
+ padding-top: 100px;
+}
