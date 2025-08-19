@@ -1839,6 +1839,8 @@ background-repeat: no-repeat;
   flex: 0 0 23%;
   text-align: center;
   height: 100%;
+  outline: 2px solid #0C26C8;
+  outline-offset:6px;
 }
 
 .create-account-wrapper {
@@ -2263,6 +2265,19 @@ margin: 0 auto;
 justify-content: space-between;
   display: flex;
  flex-wrap: wrap;
+}
+.arrow-down:hover i{
+  transform: rotate(90deg);
+}
+.hover-animation-glow .glow-1 {
+  opacity: 0;
+}
+ 
+.hover-animation-glow .animation-cover{
+  box-shadow: none;
+}
+.hover-animation-glow:hover .glow-1{
+  opacity: 1;
 }
 .address-item{
   padding-left: 30px;
